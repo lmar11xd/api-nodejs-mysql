@@ -1,0 +1,19 @@
+1. ABRIR TERMINAL EN VS CODE
+2. npm init --yes
+3. npm install express mysql
+4. npm install nodemon -D -->Dependencia solo para desarrollo
+5. configurar package.json
+	"scripts": {
+    "dev": "nodemon src/index.js"
+  },
+6. npm run dev
+
+-------------------------------
+--PUBLICAR EN HEROKU
+---------------------------------
+1. Crear Cuenta en Heroku y luego Instalar Heroku CLI en Windows
+2. Sobre la terminal: git init -> luego: heroku login
+3. heroku create -> Crear nueva app ||| heroku git:remote -a app-lmar-nodemysql -->Utilizar una creada
+
+--CAMBIAR NOMBRE APP HEROKU: heroku apps:rename --app nombre_app nuevo_nobre_app
+5. git remote -v --> verificar que se encuentre las ramas de Heroku
