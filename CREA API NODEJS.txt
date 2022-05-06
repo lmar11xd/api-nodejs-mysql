@@ -17,3 +17,13 @@
 
 --CAMBIAR NOMBRE APP HEROKU: heroku apps:rename --app nombre_app nuevo_nobre_app
 5. git remote -v --> verificar que se encuentre las ramas de Heroku
+6. git add .
+7. git commit -m "Nombre del commit"
+8. git push heroku main/master
+
+--CREAR DB
+-------------
+1. heroku addons:create cleardb:ignite
+2. heroku config | grep CLEARDB_DATABASE_URL --> para mac *** heroku config | findstr  CLEARDB_DATABASE_URL --> para windows
+3. copiar cadena de conexion: mysql://bb52a68e76d5f8:c47cb4d7@us-cdbr-east-05.cleardb.net/heroku_455f6a3a73aa829?reconnect=true
+4. heroku config:set DATABASE_URL='mysql://bb52a68e76d5f8:c47cb4d7@us-cdbr-east-05.cleardb.net/heroku_455f6a3a73aa829?reconnect=true'
